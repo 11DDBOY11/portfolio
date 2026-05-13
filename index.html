@@ -129,7 +129,73 @@
   .edu-year { font-size:.62rem; color:var(--gold); letter-spacing:.1em; flex-shrink:0; width:60px; padding-top:3px; }
   .edu-title { font-size:.82rem; font-weight:700; color:var(--paper); margin-bottom:4px; }
   .edu-sub { font-size:.7rem; color:rgba(245,240,232,.45); line-height:1.5; }
+/* Focus*/
+  #focus {
+  padding: 130px 80px;
+  background: var(--ink);
+  position: relative;
+  overflow: hidden;
+}
 
+#focus::before {
+  content: '02';
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 8rem;
+  color: rgba(201,168,76,.05);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-top: 60px;
+}
+
+.focus-card {
+  background: rgba(255,255,255,.02);
+  border: 1px solid rgba(245,240,232,.06);
+  padding: 34px 28px;
+  transition: border-color .3s, background .3s, transform .3s;
+  color: var(--paper);
+}
+
+.focus-card:hover {
+  border-color: rgba(201,168,76,.3);
+  background: rgba(201,168,76,.04);
+  transform: translateY(-4px);
+}
+
+.focus-icon {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.focus-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.focus-desc {
+  font-size: .75rem;
+  line-height: 1.85;
+  color: rgba(245,240,232,.5);
+}
+
+@media(max-width:900px) {
+  .focus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  
   /* SKILLS */
   #skills { padding:130px 80px; background:var(--cream); color:var(--ink); position:relative; overflow:hidden; }
   #skills::before { content:'02'; position:absolute; top:60px; right:50px; font-family:'Bebas Neue',sans-serif; font-size:8rem; color:rgba(10,10,15,.05); line-height:1; pointer-events:none; }
