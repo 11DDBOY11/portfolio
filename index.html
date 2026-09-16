@@ -79,7 +79,7 @@
   /* HERO */
   #hero { min-height:100vh; display:grid; grid-template-columns:1fr 1fr; position:relative; overflow:hidden; padding-top:80px; }
 
-  .hero-left { display:flex; flex-direction:column; justify-content:center; padding:80px 60px 120px 80px; position:relative; z-index:2; }
+  .hero-left { display:flex; flex-direction:column; justify-content:center; padding:100px 60px 40px 80px; position:relative; z-index:2; }
 
   .hero-eyebrow { font-size:.88rem; letter-spacing:.4em; text-transform:uppercase; color:var(--gold); margin-bottom:28px;  display:flex; align-items:center; gap:14px; }
   .hero-eyebrow::before { content:''; width:40px; height:1px; background:var(--gold); }
@@ -274,9 +274,9 @@
   <div class="hero-left">
     <p class="hero-eyebrow">Computer Science &amp; Engineering</p>
     <h1 class="hero-name">Darshan<span>Dashyal.</span></h1>
-    <p class="hero-role">Full-Stack Dev &nbsp;·&nbsp; ML Engineer &nbsp;·&nbsp; AI Builder</p>
+    <p class="hero-role">Full-Stack Dev &nbsp;·&nbsp; ML Engineer &nbsp;·&nbsp; AI Systems Builder</p>
     <p class="hero-tagline">
-      A driven CS&amp;E student from Karnataka, India — building full-stack apps, training deep learning models, and shipping AI-powered platforms that solve real problems. B.E. at Alva's IET, graduating 2027.
+      A driven CS&amp;E student from Karnataka, India — building full-stack apps, training deep learning models, and shipping AI-powered platforms that solve real problems. Ranked <strong style="color:var(--gold)">#273 of 15,000+</strong> at Virtual Prompt Wars (Hack2Skill × Google). B.E. at Alva's IET, graduating 2027.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View My Work</a>
@@ -289,7 +289,7 @@
       </div>
       <div class="info-item">
         <span class="info-label">Email</span>
-        <span class="info-val"><a href="/cdn-cgi/l/email-protection#a1c5c0d3d2c9c0cfc5c0d2c9d8c0cd93e1c6ccc0c8cd8fc2cecc"><span class="__cf_email__" data-cfemail="3b5f5a4948535a555f5a4853425a57097b5c565a525715585456">[email&#160;protected]</span></a></span>
+        <span class="info-val"><a href="/cdn-cgi/l/email-protection#a1c5c0d3d2c9c0cfc5c0d2c9d8c0cd93e1c6ccc0c8cd8fc2cecc"><span class="__cf_email__" data-cfemail="3b5f5a4948535a555f5a4853425a57097b5c565a525715585456">[email &#160;protected]</span></a></span>
       </div>
       <div class="info-item">
         <span class="info-label">Phone</span>
@@ -299,11 +299,32 @@
   </div>
 
   <div class="hero-right">
-    <div class="hero-visual">
-      <div class="visual-frame"></div>
-      <div class="visual-inner"><span class="big-initial">D</span></div>
-      <div class="hero-number">01</div>
-      <div class="status-badge">Open to Opportunities</div>
+    <div class="hero-profile-card">
+      <div class="profile-photo-wrap">
+        <div class="profile-photo-ring"></div>
+        <div class="profile-photo">
+          <img src="DD.jpeg" alt="Darshan Dashyal" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+        </div>
+        <div class="profile-status-dot"></div>
+      </div>
+
+      <div class="profile-name-block">
+        <div class="profile-label">Darshan Dashyal</div>
+        <div class="profile-title">CS&amp;E Student · AIET, Karnataka</div>
+      </div>
+
+      <div class="profile-tags">
+        <span class="ptag">🧠 ML Engineer</span>
+        <span class="ptag">⚛️ Full-Stack</span>
+        <span class="ptag">🤖 AI Builder</span>
+        <span class="ptag">🏆 Top 2% Prompt Wars</span>
+        <span class="ptag">🔷 IBM Watsonx</span>
+      </div>
+
+      <div class="profile-links">
+        <a href="https://github.com/11DDBOY11" target="_blank" class="plink">GitHub ↗</a>
+        <a href="https://linkedin.com/in/darshandashyal-97a02b2a2" target="_blank" class="plink">LinkedIn ↗</a>
+      </div>
     </div>
   </div>
 
@@ -314,15 +335,15 @@
       <span>AI Agent Builder</span><span class="ticker-dot"></span>
       <span>CS&amp;E · Alva's IET</span><span class="ticker-dot"></span>
       <span>CNN · TensorFlow · Streamlit</span><span class="ticker-dot"></span>
-      <span>RAG · OpenAI · ChromaDB</span><span class="ticker-dot"></span>
-      <span>IBM &amp; Salesforce Certified</span><span class="ticker-dot"></span>
+      <span>RAG · LangChain · ChromaDB</span><span class="ticker-dot"></span>
+      <span>IBM Watsonx · Salesforce Agentforce</span><span class="ticker-dot"></span>
       <span>Darshan Dashyal</span><span class="ticker-dot"></span>
       <span>Full-Stack Developer</span><span class="ticker-dot"></span>
       <span>ML Engineer</span><span class="ticker-dot"></span>
       <span>CS&amp;E · Alva's IET</span><span class="ticker-dot"></span>
       <span>CNN · TensorFlow · Streamlit</span><span class="ticker-dot"></span>
-      <span>RAG · OpenAI · ChromaDB</span><span class="ticker-dot"></span>
-      <span>IBM &amp; Salesforce Certified</span><span class="ticker-dot"></span>
+      <span>RAG · LangChain · ChromaDB</span><span class="ticker-dot"></span>
+      <span>IBM Watsonx · Salesforce Agentforce</span><span class="ticker-dot"></span>
     </div>
   </div>
 </section>
@@ -335,13 +356,17 @@
   </div>
   <div class="about-text reveal">
     <p>I'm <strong>Darshan Dashyal</strong>, a Computer Science &amp; Engineering student at <strong>Alva's Institute of Engineering and Technology</strong>, Karnataka. I have a robust foundation in full-stack development and software engineering, actively applying technical skills to solve complex problems.</p>
-    <p>My stack spans <strong>C, Python, Java, and MySQL</strong> on the backend to <strong>HTML, CSS, JavaScript, PHP, React, and Node.js</strong> on the front. I've shipped a live blogging platform, trained deep learning CNNs with <strong>TensorFlow</strong>, built RAG-powered AI platforms, and earned certifications from <strong>IBM, Google, and Salesforce</strong>.</p>
+    <p>My stack spans <strong>C, Python, Java, and MySQL</strong> on the backend to <strong>HTML, CSS, JavaScript, PHP, React, and Node.js</strong> on the front. I've shipped live platforms, trained deep learning CNNs with <strong>TensorFlow</strong>, built voice-activated AI kiosks with <strong>LangChain + Ollama</strong>, and gained hands-on enterprise AI experience with <strong>IBM Watsonx Orchestrate, IBM BOT &amp; IBM Agent Development Tool</strong> — trained directly by IBM staff.</p>
     <p>I'm seeking an impactful role to leverage expertise in <strong>emerging technologies</strong> and contribute to innovative solutions that drive real organizational success.</p>
 
     <div class="about-stats">
-      <div class="stat-box"><span class="stat-num">9+</span><span class="stat-label">Projects Built</span></div>
+      <div class="stat-box"><span class="stat-num">13+</span><span class="stat-label">Projects Built</span></div>
       <div class="stat-box"><span class="stat-num">5</span><span class="stat-label">Certifications</span></div>
       <div class="stat-box"><span class="stat-num">2027</span><span class="stat-label">Graduating</span></div>
+      <div class="stat-box" style="grid-column:span 3; background:linear-gradient(135deg,rgba(201,168,76,.12),rgba(192,57,43,.08)); border-color:rgba(201,168,76,.3);">
+        <span class="stat-num" style="font-size:1.6rem;">🏆 #273</span>
+        <span class="stat-label" style="font-size:.72rem; color:rgba(245,240,232,.7); letter-spacing:.1em;">Virtual Prompt Wars &nbsp;·&nbsp; Rank 273 of 15,000+ participants &nbsp;·&nbsp; Hack2Skill × Google for Developers</span>
+      </div>
     </div>
 
     <div class="edu-block">
@@ -427,9 +452,27 @@
     </div>
     <div class="skill-card reveal">
       <span class="skill-icon">🔍</span>
-      <div class="skill-name">RAG &amp; LLM APIs</div>
-      <div class="skill-desc">Retrieval-Augmented Generation with ChromaDB + OpenAI — building AI-powered document intelligence systems.</div>
-      <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.70"></div></div><div class="skill-pct">Growing</div></div>
+      <div class="skill-name">RAG &amp; LangChain</div>
+      <div class="skill-desc">Retrieval-Augmented Generation with LangChain, ChromaDB, Ollama &amp; OpenAI — building grounded, evidence-based AI systems.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.75"></div></div><div class="skill-pct">Intermediate</div></div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">🐳</span>
+      <div class="skill-name">Docker</div>
+      <div class="skill-desc">Containerizing full-stack applications with Docker &amp; Docker Compose for consistent, portable deployments.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.65"></div></div><div class="skill-pct">Growing</div></div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">▲</span>
+      <div class="skill-name">Next.js &amp; TypeScript</div>
+      <div class="skill-desc">Building production-grade full-stack apps with Next.js, TypeScript, and Vercel AI SDK — including generative UI streaming.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.73"></div></div><div class="skill-pct">Intermediate</div></div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">🎙️</span>
+      <div class="skill-name">Voice &amp; Speech AI</div>
+      <div class="skill-desc">Wake-word detection, Whisper STT (offline), gTTS/pyttsx3 TTS — building real-time hybrid voice systems.</div>
+      <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" style="--w:0.70"></div></div><div class="skill-pct">Intermediate</div></div>
     </div>
   </div>
 </section>
@@ -466,6 +509,21 @@
       <div class="cert-name">Agentblazer Innovator — AI Agent Implementation &amp; Business Outcomes</div>
       <span class="cert-icon">☁️</span>
     </div>
+    <div class="cert-card reveal" style="border-color:rgba(201,168,76,.35); background:linear-gradient(135deg,rgba(201,168,76,.08),rgba(192,57,43,.05));">
+      <span class="cert-issuer" style="color:var(--gold);">Hack2Skill × Google for Developers</span>
+      <div class="cert-name">Virtual Prompt Wars — Elite Rank #273 out of 15,000+ Participants</div>
+      <span class="cert-icon">🏆</span>
+    </div>
+    <div class="cert-card reveal" style="border-color:rgba(0,100,255,.25); background:linear-gradient(135deg,rgba(0,100,255,.06),rgba(0,60,180,.04));">
+      <span class="cert-issuer" style="color:#4a9eff;">IBM — Staff-Led Training</span>
+      <div class="cert-name">IBM Watsonx Orchestrate — Hands-on AI Workflow Automation</div>
+      <span class="cert-icon">🔷</span>
+    </div>
+    <div class="cert-card reveal" style="border-color:rgba(0,100,255,.25); background:linear-gradient(135deg,rgba(0,100,255,.06),rgba(0,60,180,.04));">
+      <span class="cert-issuer" style="color:#4a9eff;">IBM — Staff-Led Training</span>
+      <div class="cert-name">IBM BOT &amp; IBM Agent Development Tool — Enterprise AI Agent Building</div>
+      <span class="cert-icon">🔷</span>
+    </div>
   </div>
 </section>
 
@@ -479,7 +537,45 @@
 
     <div class="project-card featured reveal">
       <div class="project-num">01</div>
-      <span class="project-tag">🔥 Latest · AI · Full-Stack</span>
+      <span class="project-tag">🔥 Flagship · AI · Voice · RAG</span>
+      <div class="project-title">CampusBuddy — AI Campus Kiosk</div>
+      <div class="project-desc">A voice-activated AI kiosk assistant for AIET, Moodubidri. Greets visitors by name using face recognition, answers questions using RAG over real college data, and runs fully hybrid — online or offline. Built with FastAPI, React, LangChain, ChromaDB, Llama 3.2, DeepFace, and Whisper STT.</div>
+      <div class="project-pills"><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">React</span><span class="pill">LangChain</span><span class="pill">ChromaDB</span><span class="pill">Llama 3.2</span><span class="pill">DeepFace</span><span class="pill">Whisper</span></div>
+      <a href="https://github.com/11DDBOY11/CampusBuddy" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+
+    
+
+    <div class="project-card reveal">
+      <div class="project-num">04</div>
+      <span class="project-tag">JavaScript · Community</span>
+      <div class="project-title">Community Hero</div>
+      <div class="project-desc">A community-focused JavaScript project — connecting people, fostering collaboration, and creating real-world social impact through technology.</div>
+      <div class="project-pills"><span class="pill">JavaScript</span><span class="pill">HTML</span><span class="pill">CSS</span></div>
+      <a href="https://github.com/11DDBOY11/Community-Hero" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+
+    <div class="project-card featured reveal">
+      <div class="project-num">02</div>
+      <span class="project-tag">🔥 Live · Agentic Commerce · Production-Grade</span>
+      <div class="project-title">OMNI.AI — The Agentic Storefront</div>
+      <div class="project-desc">A production-grade autonomous commerce platform proving LLMs can safely orchestrate high-stakes financial flows. Features cryptographic 2-step checkout, in-memory inventory locking, Razorpay payment webhooks, generative React UI streaming, fuzzy semantic product search, and an unmet-demand telemetry dashboard. The AI proposes — the math approves.</div>
+      <div class="project-pills"><span class="pill">Next.js</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Groq LLM</span><span class="pill">Razorpay</span><span class="pill">Vercel AI SDK</span><span class="pill">Node.js</span><span class="pill">fuse.js</span></div>
+      <a href="https://ai-growth-agentic-commerce-theta.vercel.app" target="_blank" class="project-link">Visit Live Site</a>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">03</div>
+      <span class="project-tag">🔥 Latest · AI · Free for Students</span>
+      <div class="project-title">AI Interview Agent</div>
+      <div class="project-desc">A multi-turn AI interviewer that conducts real technical interviews for students — completely free. Built to help aspiring developers practice and prepare with confidence. Ask questions, get evaluated, and improve in real-time.</div>
+      <div class="project-pills"><span class="pill">Python</span><span class="pill">LLM</span><span class="pill">Multi-turn</span><span class="pill">AI Agent</span><span class="pill">FastAPI</span></div>
+      <a href="https://github.com/11DDBOY11" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+
+    <div class="project-card featured reveal">
+      <div class="project-num">05</div>
+      <span class="project-tag">AI · Full-Stack</span>
       <div class="project-title">ContextCore — Repo Intelligence Platform</div>
       <div class="project-desc">A RAG-powered project intelligence platform. Feed it a GitHub repo + docs, ask it anything, get cited answers. Built with React frontend, Node.js backend, and a Python/FastAPI AI engine using ChromaDB and OpenAI.</div>
       <div class="project-pills"><span class="pill">React</span><span class="pill">Node.js</span><span class="pill">Python</span><span class="pill">FastAPI</span><span class="pill">ChromaDB</span><span class="pill">OpenAI</span><span class="pill">RAG</span></div>
@@ -487,8 +583,8 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">02</div>
-      <span class="project-tag">🔥 Latest · Deep Learning</span>
+      <div class="project-num">06</div>
+      <span class="project-tag">Deep Learning</span>
       <div class="project-title">Handwritten Digit Recognition</div>
       <div class="project-desc">4-Layer CNN trained on MNIST with 99.76% accuracy — only 9 errors out of 4,200 samples. Real-time drawing canvas, multi-digit upload, and confidence charts wrapped in a Streamlit web app.</div>
       <div class="project-pills"><span class="pill">Python</span><span class="pill">TensorFlow</span><span class="pill">CNN</span><span class="pill">Streamlit</span><span class="pill">OpenCV</span></div>
@@ -496,8 +592,8 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">03</div>
-      <span class="project-tag">🔥 Latest · JavaScript</span>
+      <div class="project-num">07</div>
+      <span class="project-tag">JavaScript</span>
       <div class="project-title">Credit Card Validator</div>
       <div class="project-desc">A web application that validates card numbers using the Luhn Algorithm and displays card details — clean validation logic with instant feedback UI.</div>
       <div class="project-pills"><span class="pill">JavaScript</span><span class="pill">Luhn Algorithm</span><span class="pill">HTML</span><span class="pill">CSS</span></div>
@@ -505,7 +601,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">04</div>
+      <div class="project-num">08</div>
       <span class="project-tag">Live · Full-Stack</span>
       <div class="project-title">VTU Blogging System</div>
       <div class="project-desc">A fully functional blogging platform with HTML/CSS/JS front-end integrated with PHP and MySQL back-end. Currently live and accessible on the web.</div>
@@ -514,7 +610,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">05</div>
+      <div class="project-num">09</div>
       <span class="project-tag">Web App · College</span>
       <div class="project-title">Feedback &amp; Online Election System</div>
       <div class="project-desc">A web-based system to automate student feedback for teachers and digitize campus election processes, enhancing communication and electoral accessibility.</div>
@@ -523,7 +619,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">06</div>
+      <div class="project-num">10</div>
       <span class="project-tag">Python · REST API</span>
       <div class="project-title">Flask Student Management API</div>
       <div class="project-desc">A REST API with Flask and SQLite demonstrating full CRUD — add, view, update, and delete student records with clean backend architecture.</div>
@@ -532,7 +628,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">07</div>
+      <div class="project-num">11</div>
       <span class="project-tag">Java · CRUD</span>
       <div class="project-title">Customer Profile Management</div>
       <div class="project-desc">A Java console application for banking institutions to manage customer profiles with complete CRUD operations and clean OOP architecture.</div>
@@ -541,7 +637,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">08</div>
+      <div class="project-num">12</div>
       <span class="project-tag">Chrome Extension</span>
       <div class="project-title">Voice-to-Text Extension</div>
       <div class="project-desc">A Chrome extension that converts speech to text using the Web Speech API — making typing faster and more accessible for everyday use.</div>
@@ -550,7 +646,7 @@
     </div>
 
     <div class="project-card reveal">
-      <div class="project-num">09</div>
+      <div class="project-num">13</div>
       <span class="project-tag">Python · GUI</span>
       <div class="project-title">Python Calculator App</div>
       <div class="project-desc">A Python GUI application built with Tkinter that accurately executes arithmetic operations — a clean, functional desktop tool demonstrating GUI development skills.</div>
